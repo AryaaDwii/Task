@@ -1,0 +1,145 @@
+Grid
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-header{
+    grid-column-start:1;
+    grid-column-end:6;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-nav{
+    grid-column:1;
+    grid-row:2/span 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+
+  <div class="grid-header">1</div>
+  <div class="grid-nav">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+
+</div>
+
+​
+
+</body>
+
+</html>
+
+​
+
+​
+
+​
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Element HTML 5</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border : 1px solid gray;
+            padding : 25px;
+        }
+        .row: ::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        col-1 {width: 8.33%;}
+        col-2 {width: 16.66%;}
+        col-3 {width: 25%;}
+        col-4 {width: 33%;}
+        col-5 {width: 41.66%;}
+        col-6 {width: 50%;}
+        col-7 {width: 58.33%;}
+        col-8 {width: 66.66%;}
+        col-9 {width: 75%;}
+        col-10 {width: 83.33%;}
+        col-11 {width: 91.66%;}
+        col-12 {width: 100%;}
+        
+        </style>
+</head>
+<body>
+    <main>
+        <header >
+            <h2>Bagian Atas</h2>
+        </header>
+        <main class="row" >
+        <nav class="col-3">
+            <aside>
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                </ul>
+            </aside>
+        </nav>
+        <article class="col-9">
+            <p class="satu"> lores ipsum do site color Lorem ipsum do site color lorem
+               ipsum do site color lorem ipsum do site color lorem ipsum do site color lorem ipsum do site 
+               ipsum do site color lorem ipsum do site color lorem ipsum do site color lorem ipsum do site
+               ipsum do site color lorem ipsum do site color lorem ipsum do site color lorem ipsum do site</p>
+        </article>
+        <footer class="col-12">
+            <i>Copyright &copy; 2022 pbw2022</i>
+        </footer>
+    </main>
+</body>
+</html>
+
+
