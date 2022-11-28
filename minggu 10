@@ -1,0 +1,88 @@
+hallo2. html
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Hello Java Script</title>
+		</head>
+	<body>
+	<h1>BELAJAR Java Script</h1>
+    <p id="p1">ngab 1</p>
+    <p id="p2">ngeb 2</p>
+    <p id="hasil-output">ngab 3</p>
+    <script> 
+        // membuat objek elemen 
+        var hasil = document.getElementById("hasil-output"); 
+ 
+        // menampilkan output ke elemen hasil 
+        hasil.innerHTML = "<p>Aku suka Javascript</p>"; 
+    </script>
+	</body>
+</html>
+
+Minggu10. html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello Javascripe</title>
+	</head>
+	<body>
+		<h1>Belajar Javascripe</h1>
+		<p id="p1">(P1)Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+		<p id="p2">(P2)Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+		<p id="hasil-output">(P3)Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+		<script>
+			var hasil = document.getElementById("hasil-output");
+			
+			hasil.innerHTML = "<p>Aku Suka Javascripe</p>";
+		</script>
+	</body>
+</html>
+
+quiz. html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minggu 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+         function hitung(){
+             var form = document.formhitung;
+             var x = eval(form.bil1.value);
+             var y = eval(form.bil2.value);
+             var pil = form.opr.value;
+        if(pil=="+"){
+             var z = x+y
+        }
+        else if(pil=="-"){
+              var z = x-y
+        }
+        else if(pil=="*"){
+              var z = x*y
+        }
+        else if(pil=="/"){
+              var z = x/y
+        } 
+             form.hasil.value=z
+         } 
+    </script>
+</head>
+<body>
+    <h2>Belajar JavaScript</h2>
+    <form name="formhitung" action="#">
+        bil 1 <input type="number" name="bil1"><br>
+        opr
+        <select name="opr">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value=""></option>
+            <option value="/">/</option>
+        </select><br>
+        bil 2 <input type="number" name="bil2"><br>
+        <input type="button" value="=" onclick="hitung()">
+        <input type="number" name="hasil" disabled>
+    </form>
+</body>
+</html>
